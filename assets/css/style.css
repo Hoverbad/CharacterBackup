@@ -1,0 +1,239 @@
+/*Search Page */
+
+body {
+  background-color: rgb(244, 214, 179);
+  font-family: "Short Stack", cursive;
+}
+#header {
+  background-size: cover;
+  background-position-y: 40%;
+  color: rgb(134, 7, 7);
+  background-color: rgb(230, 178, 35);
+  position: relative !important;
+}
+
+/* h1 style for Name */
+#header h1 {
+  font-size: 400%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+}
+
+
+
+/* character Search width */
+#search-character {
+  width: 80%;
+}
+label{
+  font-family:Luminari, fantasy;
+  font-size:x-large;
+  color:aliceblue;
+}
+/* fontawesome magnifying glass icon */
+#search-button-icon {
+  width: 20px;
+  display: inline-block;
+}
+
+/*About Futurama padding */
+#info-about {
+  padding-left: 20px;
+  border-style: dashed;
+  border-width: thick;
+  background-color: rgb(205, 207, 83);
+  font-family: "Short Stack", cursive;
+}
+
+img {
+  margin-top: 50px;
+  margin-left: 500px;
+  width: 100%;
+  height: 100%;
+}
+h2{
+  font-size:x-large;
+  font-family:cursive;
+  font-weight:bolder;
+  color:brown;
+  margin-top: 50px;
+}
+#quote {
+  font-size:larger;
+  font-family: Chalkduster, fantasy ;
+  font-style: oblique;
+  font-weight: bold;
+  color:rgb(6, 6, 162);
+  text-align:left;
+  margin-top: 200px;
+}
+
+footer{
+  color: aliceblue;
+  text-align: center;
+}
+
+/* character card styling */
+.character-card {
+  width: 9rem;
+  background-color: #0275d8;
+  color: white;
+  text-align: center;
+}
+
+/* Results Page */
+
+/** Body and Gradient Background */
+
+body {
+  background: #050f14;
+  background: -moz-linear-gradient(left, #050f14 0%, #2f8cbd 50%, #050f14 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #050f14 0%,
+    #2f8cbd 50%,
+    #050f14 100%
+  );
+  background: linear-gradient(to right, #050f14 0%, #2f8cbd 50%, #050f14 100%);
+}
+
+
+/** Animation for Character card */
+
+.bounce-in-top {
+  animation: bounce-in-top 1.1s both;
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+/** Animation for Actor card */
+
+.bounce-in-bottom {
+  animation: bounce-in-bottom 1.1s both;
+}
+
+@keyframes bounce-in-bottom {
+  0% {
+    transform: translateY(500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+/** Card container */
+
+.card-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax);
+  gap: 1rem;
+}
+
+/** Character Card */
+
+.charactercard {
+  font-family: "Short Stack", cursive;
+  animation: bounce-in-top 1.1s both;
+  align-items: center;
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 50%;
+  /* width: 100%; */
+  margin: auto;
+  align-items: center;
+}
+
+.card-item {
+  text-align: center;
+}
+
+/** Actor Card */
+
+.actorcard {
+  font-family: "Short Stack", cursive;
+  animation: bounce-in-bottom 1.1s both;
+  align-items: center;
+  transition: 0.3s;
+  padding: 1rem;
+}
